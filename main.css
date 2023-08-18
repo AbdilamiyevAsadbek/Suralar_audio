@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    background: black;
+}
+.container{
+    background-image: url("./images/665adcd094fa62a63d6ed87d1fd8dd1f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 1% auto;
+    text-align: center;
+    max-width: 450px;
+    height: 700px;
+}
+#name__select{
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+#name__select:hover{
+    transform: scale(1.05);
+    background: rgb(0, 255, 0);
+}
+audio{
+        margin-top: 20px;
+}
+#surah__select{
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    min-width: 330px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+#surah__select:hover{
+    transform: scale(1.05);
+    background: rgb(0, 255, 0);
+}
+#text{
+    margin-top: 30px
+}
+#ayah__select{
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    min-width: 330px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+#ayah__select:hover{
+    transform: scale(1.05);
+    background: rgb(0, 255, 0);
+}
+.sound-wave{
+    padding-top: 200px;
+}
+
+@keyframes audio-wave {
+    0%{
+      height: 10px;
+      trnsform: translateY(0px);
+      background: #FF55BB;
+    }
+    25%{
+      height: 40px;
+      trnsform: translateY(-5px);
+      background:#FFD3A3;
+    }
+    50%{
+      height: 10px;
+      trnsform: translateY(0px);
+      background: #FCFFB2;
+    }
+    100%{
+      height: 10px;
+      trnsform: translateY(0px);
+      background: #B6EAFA;
+    }
+  }
+  
+  .sound-wave{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:8px;
+    height:60px
+  }
+  .sound-wave span{
+    height:18px;
+    width:10px;
+    display:block;
+    border-radius:8px;
+    background:orange;
+    animation:audio-wave 2.2s infinite ease-in-out
+    
+  }
+  .sound-wave span:nth-child(2) {
+    left:11px;
+    background:red;
+    animation-delay:0.2s
+  }
+  .sound-wave span:nth-child(3){
+    left:22px;
+    animation-delay:0.4s
+  }
+  .sound-wave span:nth-child(4){
+    left:33px;
+    animation-delay:0.6s
+  }
+  .sound-wave span:nth-child(5){
+    left:44px;
+    animation-delay:0.8s
+  }
+  .sound-wave span:nth-child(6){
+    left:55px;
+    animation-delay:1s
+  }
